@@ -13,18 +13,6 @@ import java.util.List;
 
 @WebServlet(name = "productServlet", value = "/product-servlet")
 public class ProductServlet extends HttpServlet {
-    List<Product> ourProducts = new ArrayList<>(Arrays.asList(
-            new Product(1, "Mazda", 1_200_000f),
-            new Product(2, "TelNet", 98_000f),
-            new Product(3, "Ibanez", 177_000f),
-            new Product(4, "Learning OS", 2_300f),
-            new Product(5, "Fresh", 30_000f),
-            new Product(6, "Acer", 86_000f),
-            new Product(7, "Toshiba", 113_000f),
-            new Product(8, "Freeze", 1_200_000f),
-            new Product(9, "Hyundai HB4000", 1_200_000f),
-            new Product(10, "Big", 40_000_000f)
-    ));
 
     @Override
     public void init() throws ServletException {
