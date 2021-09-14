@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cart {
-    ProductRepository pr;
-    List<Product> carts = new ArrayList<>();
+    private ProductRepository pr;
+    private List<Product> carts;
 
     public Cart(ProductRepository pr) {
         this.pr = pr;
+        this.carts = new ArrayList<>();
     }
 
 
@@ -27,6 +28,10 @@ public class Cart {
                 carts.remove(pr.getProducts().get(i));
             }
         }
+    }
+
+    public List<Product> getCarts() {
+        return carts;
     }
 
     @Override

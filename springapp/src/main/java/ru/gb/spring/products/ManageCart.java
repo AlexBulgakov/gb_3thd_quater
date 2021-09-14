@@ -31,8 +31,8 @@ public class ManageCart {
                 cart.addProduct(id);
             }
 
-            for (int i = 0; i < cart.carts.size(); i++) {
-                System.out.println(cart.carts.get(i));
+            for (int i = 0; i < cart.getCarts().size(); i++) {
+                System.out.println(cart.getCarts().get(i));
             }
 
             if (command.equals("delete")) {
@@ -40,8 +40,8 @@ public class ManageCart {
             }
             System.out.println();
 
-            for (int i = 0; i < cart.carts.size(); i++) {
-                System.out.println(cart.carts.get(i));
+            for (int i = 0; i < cart.getCarts().size(); i++) {
+                System.out.println(cart.getCarts().get(i));
             }
 
         }

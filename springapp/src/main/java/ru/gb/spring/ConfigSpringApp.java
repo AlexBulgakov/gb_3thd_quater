@@ -17,12 +17,12 @@ public class ConfigSpringApp {
 
     @Bean
     @Scope("prototype")
-    public Cart cart() {
-        return new Cart(productRepository());
+    public Cart cart(ProductRepository productRepository) {
+        return new Cart(productRepository);
     }
 
     @Bean
-    public ManageCart mc() {
-        return new ManageCart(cart());
+    public ManageCart mc(Cart cart) {
+        return new ManageCart(cart);
     }
 }
