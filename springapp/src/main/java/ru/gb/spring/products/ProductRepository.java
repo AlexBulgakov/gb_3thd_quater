@@ -30,4 +30,10 @@ public class ProductRepository {
         return null;
     }
 
+    @Override
+    public String toString() {
+        return "ProductRepository{" +
+                "products=" + products +
+                '}';
+    }
 }

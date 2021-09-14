@@ -21,8 +21,10 @@ public class SpringApp {
                 new Product(4, "NoteBook", 41870f),
                 new Product(5, "GamingСonsole", 13590f)
         ));
+        System.out.println(pd);
 
         Cart cart = context.getBean(Cart.class);
+        System.out.println(cart);
         ManageCart mc = context.getBean(ManageCart.class);
         mc.run();
 

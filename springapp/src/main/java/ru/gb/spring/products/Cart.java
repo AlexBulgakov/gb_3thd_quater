@@ -1,11 +1,8 @@
 package ru.gb.spring.products;
 
-import org.springframework.context.annotation.Scope;
-
 import java.util.ArrayList;
 import java.util.List;
 
-@Scope("prototype")
 public class Cart {
     ProductRepository pr;
     List<Product> carts = new ArrayList<>();
@@ -30,5 +27,13 @@ public class Cart {
                 carts.remove(pr.getProducts().get(i));
             }
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Cart{" +
+                "pr=" + pr +
+                ", carts=" + carts +
+                '}';
     }
 }
